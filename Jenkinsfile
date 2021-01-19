@@ -31,7 +31,7 @@ pipeline {
                         app.push("${env.BUILD_NUMBER}")
                         app.push("latest")
                     }
-                },
+                }
                     stage ('DeployToProduction') {
     when {
         branch 'master'
